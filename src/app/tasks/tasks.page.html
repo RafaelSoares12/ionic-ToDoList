@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-list>
     <ion-item *ngFor="let task of tasks; let i = index">
       {{ task }}
@@ -16,5 +16,4 @@
     <ion-input placeholder="Nova tarefa" [(ngModel)]="newTask"></ion-input>
     <ion-button slot="end" (click)="addTask()">Adicionar</ion-button>
   </ion-item>
-
 </ion-content>

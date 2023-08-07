@@ -12,9 +12,9 @@ export class TasksPage implements OnInit {
   newTask: string = '';
   
   addTask() {
-    if (this.newTask.trim() !== ''){
+    if (this.newTask.trim() !== '') {
       this.tasks.push(this.newTask);
-      this.newTask = '';
+      this.newTask = ''; // Limpa o campo após adicionar
     }
   }
 
